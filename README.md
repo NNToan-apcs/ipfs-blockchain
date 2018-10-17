@@ -19,7 +19,7 @@ npm run compile
 
 npm start
 ```
-- Open your browser with the link [127.0.0.1:12345](127.0.0.1:12345)
+- Open your browser with the link [http://127.0.0.1:12345](http://127.0.0.1:12345)
 ## Features
 - Allow upload and download a single file onto IPFS
 - Calculate the time for uploading and downloading
