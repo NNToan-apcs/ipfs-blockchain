@@ -32,19 +32,19 @@ node.on('ready', async () => {
 
         var t_after = new Date().getTime();
         document.getElementById("uploadTime").innerHTML = t_after-t_before + "  miliseconds";
-        
-        t_before = new Date().getTime();
+        document.getElementById('upload').innerHTML = filesAdded[0].hash
+    })
 
+    document.getElementById('downloadButton').addEventListener('click', async function(){
+        t_before = new Date().getTime();
+        let downloadHash = document.getElementById('downloadFile').value;
         // Get File
-        const fileBuffer = await node.files.cat(filesAdded[0].hash)
+        const fileBuffer = await node.files.cat(downloadHash)
 
         t_after = new Date().getTime();
 
         document.getElementById("downloadTime").innerHTML = t_after-t_before + "  miliseconds";
-
-        document.getElementById('upload').innerHTML = filesAdded[0].hash
         document.getElementById('download').innerHTML = fileBuffer.toString()
-    
     })
 })
 
@@ -72,3 +72,4 @@ function readFileContent(file) {
     reader.readAsText(file)
   })
 }
+
