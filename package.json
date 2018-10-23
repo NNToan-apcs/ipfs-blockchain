@@ -1,0 +1,30 @@
+{
+  "name": "ipfs-blockchain",
+  "version": "0.0.1",
+  "description": "ipfs-blockchain smartcontracts and application",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NNToan-apcs/ipfs-blockchain.git"
+  },
+  "keywords": [
+    "ipfs",
+    "blockchain",
+    "file-system"
+  ],
+  "author": "Toan Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NNToan-apcs/ipfs-blockchain/issues"
+  },
+  "homepage": "https://github.com/NNToan-apcs/ipfs-blockchain#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.0.0"
+  }
+}
